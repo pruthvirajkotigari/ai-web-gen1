@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B2B SaaS Platform - Camera Control</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            font-family: Arial, sans-serif;
-        }
-
-        .hero-section {
-            background-image: url('camera-dashboard.jpg');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        .features-section {
-            background-color: #fff;
-            padding: 50px 0;
-        }
-
-        .use-cases-section {
-            background-color: #f8f9fa;
-            padding: 50px 0;
-        }
-
-        /* Add more custom styles as needed */
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B2B SaaS Platform</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .hero-section {
+        background-image: url('dashboard.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .features-section {
+        background-color: #fff;
+        padding: 50px 0;
+    }
+    .use-cases-section {
+        background-color: #f8f9fa;
+        padding: 50px 0;
+    }
+    .interactive-demo-section {
+        background-color: #fff;
+        padding: 50px 0;
+    }
+    /* Add more styles as needed */
+</style>
 </head>
-
 <body>
-    <section class="hero-section">
-        <div class="container">
-            <h1>Revolutionize Camera Operations with Precision and Ease</h1>
-            <p>A B2B SaaS platform providing advanced control and management tools for camera systems.</p>
-            <a href="#" class="btn btn-primary">Get Started Now</a>
-        </div>
-    </section>
 
-    <section class="features-section">
-        <div class="container">
-            <h2>Key Features</h2>
-            <!-- Add feature cards with icons and descriptions -->
-        </div>
-    </section>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>Revolutionize Camera Operations with Precision and Ease</h1>
+        <p>A B2B SaaS platform providing advanced control and management tools for camera systems.</p>
+        <a href="#" class="btn btn-primary">Get Started Now</a>
+    </div>
+</section>
 
-    <section class="use-cases-section">
-        <div class="container">
-            <h2>Use Cases</h2>
-            <!-- Add examples of tool usage across industries -->
-        </div>
-    </section>
-
-    <!-- Add more sections like Interactive Demo, Testimonials, Pricing, Tech Integrations, Support and Documentation -->
-
-    <footer>
-        <div class="container">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Support</a>
-            </nav>
-            <div>
-                <form>
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit">Subscribe</button>
-                </form>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+<!-- Features Section -->
+<section class="features-section">
+    <div class="container">
+        <h2>Key Features</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="multi-camera.jpg" style="height: 200px; width: 300px;" alt="Image of a multi-camera setup in a control room with multiple screens displaying live feeds from different angles. The room is dimly lit, emphasizing the high-tech equipment." />
+                <h3>Multi-Camera System Management</h3>
+                <p>Efficiently manage multiple cameras from a centralized dashboard.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="ai-camera.jpg" style="height: 200px; width: 300px;" alt="Image of an AI-driven camera adjusting its focus automatically based on the movement of a subject. The camera is mounted on a tripod in a studio setting." />
+                <h3>AI-Driven Camera Adjustments</h3>
+                <p>Utilize artificial intelligence for automatic camera adjustments.</p>
             </div>
         </div>
-        <p>&copy; 2024 B2B SaaS Platform - Camera Control</p>
-    </footer>
+        <!-- Add more feature cards as needed -->
+    </div>
+</section>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Use Cases Section -->
+<section class="use-cases-section">
+    <div class="container">
+        <h2>Use Cases</h2>
+        <p>Explore how our platform can benefit various industries:</p>
+        <ul>
+            <li>Security teams managing surveillance cameras.</li>
+            <li>Film crews remotely controlling cinematography.</li>
+            <li>Live streamers optimizing video quality on the fly.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Interactive Demo Section -->
+<section class="interactive-demo-section">
+    <div class="container">
+        <h2>Interactive Demo</h2>
+        <p>Experience our camera control interface in action.</p>
+        <!-- Include interactive demo component here -->
+    </div>
+</section>
+
+<!-- Add more sections (Testimonials, Pricing, Tech Integrations, Support and Documentation) -->
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 B2B SaaS Platform</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook Icon" /></a>
+            <a href="#"><img src="twitter.png" alt="Twitter Icon" /></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn Icon" /></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script 
                     id="clhac43dd0002q0vl8ue830mv"
                     data-name="databerry-chat-bubble"
                     src="https://databerry-one.vercel.app/js/chat-bubble.js"
                     ></script></body>
-
 </html>
