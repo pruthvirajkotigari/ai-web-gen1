@@ -1,193 +1,152 @@
 ```html
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IntelliPipeline: AI-Driven Workflow Optimization for B2B Enterprises</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shared Team Todo List App</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <style>
-    body, html {
-        height: 100%;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .header {
-        background-color: #f1f1f1;
-        padding: 50px;
-        text-align: center;
-    }
-    .banner {
-        background: url('banner-image.jpg') no-repeat center center;
-        background-size: cover;
-        height: 50vh;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-shadow: 2px 2px 4px #000;
-    }
-    .section {
-        padding: 50px 20px;
-    }
-    .dark-bg {
-        background-color: #333;
-        color: #fff;
-    }
-    .light-bg {
-        background-color: #f4f4f4;
-    }
-    .blue-bg {
-        background-color: #007bff;
-        color: #fff;
-    }
-    .testimonial-carousel .carousel-item {
-        background: none;
-        min-height: 250px;
-        padding: 30px;
-        box-shadow: 0 5px 15px rgba(0,0,0,.1);
-    }
-    .testimonial-carousel .carousel-item img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    .map-container {
-        height: 400px;
-        position: relative;
-    }
-    .map-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
-    .footer {
-        background-color: #222;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-    }
+    body { font-family: 'Arial', sans-serif; }
+    .header, .services, .testimonials, .about, .location, .pricing { padding: 50px 0; }
+    .header { background-color: #007bff; color: #ffffff; }
+    .services { background-color: #6c757d; color: #ffffff; }
+    .testimonials { background-color: #28a745; color: #ffffff; }
+    .about { background-color: #17a2b8; color: #ffffff; }
+    .location { background-color: #ffc107; color: #343a40; }
+    .pricing { background-color: #dc3545; color: #ffffff; }
+    .footer { background-color: #343a40; color: #ffffff; padding: 20px 0; text-align: center; }
 </style>
 </head>
 <body>
-
-<div class="header">
-    <h1>IntelliPipeline</h1>
-    <p>AI-Driven Workflow Optimization for B2B Enterprises</p>
+<header class="header text-center">
+<div class="container">
+<h1>Welcome to Your Shared Team Todo List App</h1>
+<p>Efficiently manage your team's tasks and projects with our B2B SaaS solution.</p>
 </div>
-
-<div class="banner">
-    <h1>Welcome to IntelliPipeline</h1>
-    <p>Revolutionizing B2B Workflow Automation with AI</p>
+</header>
+<section class="services">
+<div class="container">
+<h2 class="text-center mb-4">Our Services</h2>
+<div class="row">
+<div class="col-md-4">
+<img alt="A detailed image showing a user interacting with the task management interface, highlighting the user-friendly design and feature-rich dashboard of our app." src="./images/service1.webp" style="height: 200px; width: 100%;"/>
+<h3>Task Management</h3>
+<p>Organize and prioritize your team's tasks with our intuitive interface.</p>
 </div>
-
-<div class="section dark-bg">
-    <div class="container">
-        <h2>About IntelliPipeline</h2>
-        <p>IntelliPipeline is a cutting-edge B2B SaaS platform designed to enhance workflow automation and optimization for mid-to-large-sized enterprises through the power of AI and machine learning.</p>
-    </div>
+<div class="col-md-4">
+<img alt="An image capturing a team meeting where members are discussing the progress of their projects using our application, which displays data analytics on a large screen." src="./images/service2.webp" style="height: 200px; width: 100%;"/>
+<h3>Project Tracking</h3>
+<p>Track the progress of your projects with real-time updates and analytics.</p>
 </div>
-
-<div class="section light-bg">
-    <div class="container">
-        <h2>Features</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Automate Repetitive Tasks</h3>
-                <p>Seamlessly integrates with tools like CRMs and ERPs to automate manual processes.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Predict Workflow Bottlenecks</h3>
-                <p>Employs predictive analytics to proactively identify and address bottlenecks.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Cross-Department Collaboration</h3>
-                <p>Facilitates better teamwork with features like real-time messaging and collaborative dashboards.</p>
-            </div>
-        </div>
-    </div>
+<div class="col-md-4">
+<img alt="A close-up view of a project manager setting deadlines and assigning tasks using our application, showcasing the ease of scheduling and resource allocation." src="./images/service3.webp" style="height: 200px; width: 100%;"/>
+<h3>Scheduling &amp; Deadlines</h3>
+<p>Set deadlines and assign tasks effortlessly within your team.</p>
 </div>
-
-<div class="section blue-bg">
-    <div class="container">
-        <h2>Our Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="service-image1.jpg" alt="An image showing an example of IntelliPipeline's dashboard, which is used for tracking KPIs and managing tasks across different departments. The dashboard is user-friendly and designed to enhance productivity by providing clear, actionable insights." style="width:100%; height:200px;">
-                <h3>Custom KPI Tracking</h3>
-                <p>Customizable dashboards to track and analyze key performance indicators.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="service-image2.jpg" alt="A detailed visualization of IntelliPipeline's predictive analytics feature, highlighting how it identifies potential bottlenecks in workflows across various departments. This tool uses advanced algorithms to forecast issues before they arise, ensuring smooth operations." style="width:100%; height:200px;">
-                <h3>Data-Driven Insights</h3>
-                <p>Advanced analytics providing actionable insights to optimize processes.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="service-image3.jpg" alt="A snapshot of IntelliPipeline's integration capabilities, showcasing its ability to connect seamlessly with other SaaS tools like Salesforce, Slack, and Jira. This image represents the plug-and-play integration feature that simplifies the incorporation of IntelliPipeline into existing IT ecosystems." style="width:100%; height:200px;">
-                <h3>Plug-and-Play Integrations</h3>
-                <p>Easily integrates with existing SaaS tools to enhance functionality.</p>
-            </div>
-        </div>
-    </div>
 </div>
-
-<div class="section light-bg">
-    <div class="container">
-        <h2>Testimonials</h2>
-        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="customer1.jpg" alt="Photo of John Doe, a satisfied IntelliPipeline user, who is the CEO of a leading logistics company. He praises the platform for its robust features that have significantly improved his company's operational efficiency." style="width:80px; height:80px;">
-                    <p>John Doe, CEO of Logistics Inc.</p>
-                    <blockquote>"IntelliPipeline has transformed our workflow management, making it more efficient and responsive."</blockquote>
-                </div>
-                <div class="carousel-item">
-                    <img src="customer2.jpg" alt="Image of Jane Smith, a project manager at a healthcare provider, who uses IntelliPipeline to streamline patient data processing. She values the platform's ability to integrate smoothly with existing systems and its user-friendly interface." style="width:80px; height:80px;">
-                    <p>Jane Smith, Project Manager at HealthCare Co.</p>
-                    <blockquote>"The predictive analytics feature is a game changer, helping us anticipate and solve issues proactively."</blockquote>
-                </div>
-                <div class="carousel-item">
-                    <img src="customer3.jpg" alt="Portrait of Alex Johnson, a senior director at a finance firm, who recommends IntelliPipeline for its exceptional ability to handle multi-location workflows and its scalable solutions tailored for large enterprises." style="width:80px; height:80px;">
-                    <p>Alex Johnson, Senior Director at Finance Solutions Ltd.</p>
-                    <blockquote>"Thanks to IntelliPipeline, our cross-department collaboration has never been smoother."</blockquote>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
 </div>
-
-<div class="section dark-bg">
-    <div class="container">
-        <h2>Location</h2>
-        <div class="map-container">
-            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1276474%2C51.5073219%2C-0.1276474%2C51.5073219&amp;layer=mapnik" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
+</section>
+<section class="testimonials text-center">
+<div class="container">
+<h2>What Our Clients Say</h2>
+<div class="carousel slide" data-bs-ride="carousel" id="testimonialCarousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img alt="Portrait of John Doe, a satisfied client, smiling after successful deployment of our task management system in his organization, which significantly boosted team productivity." class="rounded-circle" src="./images/client1.webp" style="height: 100px; width: 100px;"/>
+<p class="mt-3">"This app has revolutionized how we handle tasks within our team. Highly recommend!"</p>
+<em>- John Doe, CEO of Innotech</em>
 </div>
-
-<div class="footer">
-    <p>&copy; 2024 IntelliPipeline. All rights reserved.</p>
-    <p>Follow us on:
-        <a href="#">Facebook</a> |
-        <a href="#">Twitter</a> |
-        <a href="#">LinkedIn</a>
-    </p>
+<div class="carousel-item">
+<img alt="Image of Jane Smith, a project manager, discussing the benefits she experienced using our software during a conference, highlighting increased efficiency and better team collaboration." class="rounded-circle" src="./images/client2.webp" style="height: 100px; width: 100px;"/>
+<p class="mt-3">"A must-have tool for any team looking to improve collaboration and efficiency."</p>
+<em>- Jane Smith, Project Manager</em>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#testimonialCarousel" type="button">
+<span aria-hidden="true" class="carousel-control-prev-icon"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#testimonialCarousel" type="button">
+<span aria-hidden="true" class="carousel-control-next-icon"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</section>
+<section class="about">
+<div class="container text-center">
+<h2>About Us</h2>
+<p>We are a dedicated team committed to providing innovative software solutions for team management. Our tools are designed to enhance productivity and streamline project processes.</p>
+</div>
+</section>
+<section class="location">
+<div class="container text-center">
+<h2>Our Location</h2>
+<p>Visit us or reach out through the map below to get more information.</p>
+<div style="height: 300px; background-image: url('map.jpg'); background-size: cover; background-position: center;"></div>
+</div>
+</section>
+<section class="pricing">
+<div class="container">
+<h2 class="text-center">Pricing Plans</h2>
+<div class="row">
+<div class="col-md-4">
+<div class="card text-center">
+<div class="card-header">Basic</div>
+<div class="card-body">
+<h3>$10/month</h3>
+<p>For small teams just getting started</p>
+<ul>
+<li>Up to 10 Users</li>
+<li>Basic Support</li>
+<li>Limited Features</li>
+</ul>
+<button class="btn btn-primary">Choose Plan</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card text-center">
+<div class="card-header">Professional</div>
+<div class="card-body">
+<h3>$30/month</h3>
+<p>For growing teams needing more features</p>
+<ul>
+<li>Up to 50 Users</li>
+<li>Priority Support</li>
+<li>All Features</li>
+</ul>
+<button class="btn btn-primary">Choose Plan</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card text-center">
+<div class="card-header">Enterprise</div>
+<div class="card-body">
+<h3>$100/month</h3>
+<p>For large teams and organizations</p>
+<ul>
+<li>Unlimited Users</li>
+<li>Dedicated Support</li>
+<li>Custom Integrations</li>
+</ul>
+<button class="btn btn-primary">Choose Plan</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<p>© 2024 Shared Team Todo List App. All rights reserved.</p>
+<p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">LinkedIn</a>.</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script 
                     id="clhac43dd0002q0vl8ue830mv"
                     data-name="databerry-chat-bubble"
