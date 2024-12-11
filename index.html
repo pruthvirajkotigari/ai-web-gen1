@@ -4,124 +4,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suggestions on Schema B2B SaaS</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<title>Intelligent Home Security System B2B SaaS</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
     body { font-family: Arial, sans-serif; }
-    .header, .services, .testimonials, .about, .location, .pricing { padding: 50px; }
-    .header { background-color: #007BFF; color: white; }
-    .services { background-color: #6C757D; color: white; }
-    .testimonials { background-color: #28A745; color: white; }
-    .about { background-color: #17A2B8; color: white; }
-    .location { background-color: #FFC107; color: black; }
-    .pricing { background-color: #DC3545; color: white; }
-    .footer { background-color: #343A40; color: white; padding: 30px; text-align: center; }
+    .header, .services, .testimonials, .about, .location, .pricing { padding: 50px 0; }
+    .header { background-color: #f8f9fa; }
+    .services { background-color: #e9ecef; }
+    .testimonials { background-color: #dee2e6; }
+    .about { background-color: #ced4da; }
+    .location { background-color: #adb5bd; }
+    .pricing { background-color: #6c757d; }
+    .footer { background-color: #343a40; color: white; padding: 20px 0; text-align: center; }
 </style>
 </head>
 <body>
 
-<div class="header text-center">
-    <h1>Welcome to Our B2B SaaS Platform</h1>
-    <p>Explore our innovative solutions designed for your business needs.</p>
-</div>
+<header class="header text-center">
+    <h1>Welcome to Our Intelligent Home Security Solutions</h1>
+    <p>Revolutionizing safety with cutting-edge B2B SaaS technology.</p>
+</header>
 
-<div class="services container text-center">
+<section class="services container text-center">
     <h2>Our Services</h2>
     <div class="row">
         <div class="col-md-4">
-            <img src="service1.jpg" style="height: 200px; width: 100%;" alt="An image showing a detailed analytics dashboard, providing insights into business performance metrics, designed to help companies understand their data better and make informed decisions.">
-            <h3>Analytics</h3>
-            <p>Gain insights from your data.</p>
+            <img src="service1.jpg" style="height: 200px; width: 100%;" alt="A detailed image showing our advanced security camera system, equipped with night vision and motion detection capabilities, installed in various strategic locations for optimal coverage.">
+            <h3>Advanced Monitoring</h3>
+            <p>Ensure safety with our state-of-the-art surveillance technology.</p>
         </div>
         <div class="col-md-4">
-            <img src="service2.jpg" style="height: 200px; width: 100%;" alt="A collaborative workspace image where team members are engaging in developing scalable software solutions, featuring modern tools and technologies that facilitate efficient project management and communication.">
-            <h3>Collaboration Tools</h3>
-            <p>Enhance team productivity.</p>
+            <img src="service2.jpg" style="height: 200px; width: 100%;" alt="An interactive display of our security dashboard that allows users to monitor real-time data and receive instant alerts. This system is designed to provide comprehensive control over security measures from a centralized location.">
+            <h3>Real-Time Alerts</h3>
+            <p>Stay informed with instant notifications about security breaches.</p>
         </div>
         <div class="col-md-4">
-            <img src="service3.jpg" style="height: 200px; width: 100%;" alt="A secure cloud storage solution image, depicting a highly secure data center with advanced encryption methods to ensure that business data is protected against threats and accessible from anywhere in the world.">
-            <h3>Cloud Storage</h3>
-            <p>Secure and scalable.</p>
+            <img src="service3.jpg" style="height: 200px; width: 100%;" alt="A close-up view of our latest biometric access control system that uses fingerprint and facial recognition technology to ensure that only authorized personnel can access secure areas.">
+            <h3>Access Control</h3>
+            <p>Control access with biometrics to enhance security protocols.</p>
         </div>
     </div>
-</div>
+</section>
 
-<div class="testimonials container text-center">
+<section class="testimonials text-center">
     <h2>What Our Clients Say</h2>
-    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <p>"This platform revolutionized our workflow!"</p>
-                <img src="client1.jpg" class="rounded-circle" style="height: 100px; width: 100px;" alt="Photo of John Doe, a satisfied client, smiling in his office which is filled with innovative tech gadgets and displays, showing his satisfaction with the services provided by our B2B SaaS platform.">
-                <em>- John Doe, CEO</em>
+                <img src="client1.jpg" class="rounded-circle" style="height: 100px; width: 100px;" alt="Portrait of John Doe, CEO of Tech Innovations, expressing his satisfaction with our security solutions, highlighting the reliability and efficiency of our systems in protecting his business operations.">
+                <p class="testimonial-text">"This security system has revolutionized how we protect our assets."</p>
+                <em>- John Doe, CEO of Tech Innovations</em>
             </div>
             <div class="carousel-item">
-                <p>"Incredible support and services that helped us grow!"</p>
-                <img src="client2.jpg" class="rounded-circle" style="height: 100px; width: 100px;" alt="Photo of Jane Smith, a happy customer, standing in her well-organized workspace, surrounded by multiple monitors displaying growth charts, attributing her success to our effective SaaS solutions.">
-                <em>- Jane Smith, Founder</em>
+                <img src="client2.jpg" class="rounded-circle" style="height: 100px; width: 100px;" alt="Image of Jane Smith, a security manager, standing in her company's control room, overseeing the security operations facilitated by our comprehensive software, appreciating the user-friendly interface and robust functionality.">
+                <p class="testimonial-text">"The user interface is incredibly intuitive and powerful."</p>
+                <em>- Jane Smith, Security Manager</em>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-</div>
+</section>
 
-<div class="about container text-center">
+<section class="about text-center">
     <h2>About Us</h2>
-    <p>Founded in 2010, our company has been at the forefront of SaaS solutions, helping businesses achieve their goals through innovative technology and outstanding customer service.</p>
-</div>
+    <p>Founded in 2010, our company has been at the forefront of developing innovative security solutions for businesses worldwide. Our mission is to provide advanced, reliable, and accessible security systems that protect your most valuable assets.</p>
+</section>
 
-<div class="location container text-center">
+<section class="location text-center">
     <h2>Our Location</h2>
-    <img src="map.jpg" style="height: 300px; width: 100%;" alt="A detailed map showing the location of our headquarters in downtown San Francisco, surrounded by major tech hubs and easily accessible via public transportation, illustrating our deep integration in the tech ecosystem.">
-</div>
+    <img src="map.jpg" style="height: 400px; width: 100%;" alt="A detailed map showing the location of our headquarters in downtown San Francisco, surrounded by major tech companies and business hubs, illustrating our strategic placement for partnerships and collaborations within the tech industry.">
+</section>
 
-<div class="pricing container text-center">
+<section class="pricing text-center">
     <h2>Our Pricing Plans</h2>
     <div class="row">
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header">Basic</div>
                 <div class="card-body">
-                    <h3>$99/month</h3>
-                    <p>Essential features for small teams.</p>
+                    <h3 class="card-title">$99/month</h3>
+                    <p class="card-text">Ideal for small businesses looking to enhance their security.</p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card bg-success text-white">
+            <div class="card">
                 <div class="card-header">Pro</div>
                 <div class="card-body">
-                    <h3>$199/month</h3>
-                    <p>Advanced features for growing businesses.</p>
+                    <h3 class="card-title">$199/month</h3>
+                    <p class="card-text">Designed for medium businesses requiring advanced features.</p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card bg-info text-white">
-                <div the="card-header">Enterprise</div>
-                <div class="card-body">
-                    <h3>Contact us</h3>
-                    <p>Custom solutions for large enterprises.</p>
+            <div class="card">
+                <div class="card-header">Enterprise</div>
+                <div the="card-body">
+                    <h3 class="card-title">Custom Pricing</h3>
+                    <p class="card-text">Custom solutions for large enterprises needing tailored security.</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="footer">
-    <p>&copy; 2024 Our B2B SaaS Company. Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">LinkedIn</a>.</p>
-</div>
+<footer class="footer">
+    <p>&copy; 2024 Intelligent Home Security System. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">LinkedIn</a>.</p>
+</footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script 
                     id="clhac43dd0002q0vl8ue830mv"
                     data-name="databerry-chat-bubble"
